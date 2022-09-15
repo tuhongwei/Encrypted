@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="item">
+    <label class="label" for="encrypt">加密前内容</label>
+    <textarea class="textarea" placeholder="请输入需要加密的内容" bindinput="bindEncryptInput" />
+    <button type="primary" bindtap="encrypt" class="btn">加密</button>
+    <view class="result">
+      <view>加密结果：{{ encryptResult }}</view>
+      <button bindtap="copy" data-type="encrypt" class="copy">复制</button>
+    </view>
+  </view>
+  <view class="item">
+    <label class="label" for="decrypt">解密前内容</label>
+    <textarea class="textarea" placeholder="请输入需要解密的内容" bindinput="bindDecryptInput" />
+    <button type="primary" bindtap="decrypt" class="btn">解密</button>
+    <view class="result">
+      <view>解密结果：{{ decryptResult }}</view>
+      <button bindtap="copy" data-type="encrypt" class="copy">复制</button>
+    </view>
+  </view>
+</view>
